@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website Price</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/default.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="container">
+    <header>
+        	<!-- ==== logo ==== -->
+			<div id="logo">
+				<img alt="" src="img/logo.png">
+				<p><a href="index.html">New Web Design</a></p>
+				<!--<p class="slogan sloganfade">Every Business Web Solution</p>-->
+			</div>
+    </header>
+    <nav>
+        <div>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="rqssupport.html">Request Support</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+        <main>
+            <h2 class="button-center">Website Project Price</h2>
+            <hr>
+            <!--    Start website form   -->
+            <form id="projectCost" name="projectCost" action="scripts/price.php" method="POST">
+                <p class="question button-center">Select the type of the website for your project.</p>
+                <div id="typeWebsite" class="button-center">
+                <div id="websiteType">
+                    <input id="ecommRadio" class="" type="radio" name="project" value="E-commerce">E-commerce |
+                    <input id="brochureRadio" class="" type="radio" name="project" value="Brochure">Brochure |
+                    <input id="personalRadio" class="" type="radio" name="project" value="Personal">Personal |
+                    <input id="forumRadio" class="" type="radio" name="project" value="Forum">Forum |
+                    <input id="educationalRadio" class="" type="radio" name="project" value="Educational">Educational |
+                    <input id="informationalRadio" class="" type="radio" name="project" value="Informational">Informational |
+                    <input id="newsRadio" class="" type="radio" name="project" value="News">News |
+                    <input id="sharingRadio" class="" type="radio" name="project" value="File Sharing or Download">File sharing/Download |
+                    <input id="advocacyRadio" class="" type="radio" name="project" value="Advocacy">Advocacy
+                </div>
+                <!--<div>
+                    <input class="" type="radio" name="project" value="Informational">Informational |
+                    <input class="" type="radio" name="project" value="News">News |
+                    <input class="" type="radio" name="project" value="File Sharing or Download">File sharing/Download |
+                    <input class="" type="radio" name="project" value="Advocacy">Advocacy
+                </div>-->
+                </div>
+                <!--<div class="hidden" id="hrHosting">
+                    <hr class="services hrserver">
+</div>-->
+<div class="hidden" id="firstHostChoice">
+<!--<div class="hidden" id="ecommerceHost">-->
+    <div>
+    <hr class="services hrserver">
+    </div>
+    <p>E-commerce content here</p>
+    <div class="center">
+        <p>The recommended choice for E-commerce hosting is VPS server or higher level a Dedicated server.</p>
+        <p>You can authorize as to buy hosting, domain name, SSL certificate, and privacy on your behalf or you can provide such as by buying it yourself.</p>
+    </div>
+    <div class="">
+        <div class="row center">
+            <p>Do you need hosting plan?</p>
+        <input id="yesHosting" class="" type="radio" name="ecommerce" value="Yes">Yes, buy the hosting. |
+        <input id="noHosting" class="" type="radio" name="ecommerce" value="No">No, I will provide my own.
+        <p class="smalltxt">All hosting plans are for 3 years.</p>
+        </div>
+        <div class="row" >
+                <select class="rowP-input rowP-border" id="firstGroupHosting" name="recommend" disabled>
+                    <option>Select hosting plan for the E-commerce website</option>
+                    <option value="VPS hosting @ HostGator">VPServer $1800 @36months/Renew $159 per month @ HostGator</option>
+                    <option value="Dedicated server @ HostGator">Dedicated server $4650 @36months/Renew $239 per month @ HostGator</option>
+                    <option value="VPS hosting @ GoDaddy">VPServer $1470 @36months /Renew @ GoDaddy</option>
+                    <option value="Dedicated server @ GoDaddy">Dedicated server $4350 @36months /Renew $240 per month @ GoDaddy</option>
+                </select>
+        </div>
+    </div>
+    
+</div>
+
+<div class="hidden" id="secondHostChoice">
+    <div>
+        <hr class="services hrserver">
+    </div>
+    <p>Second content here</p>
+    <p>Brochure, Personal, and Informational webiste content here.</p>
+    <div class="center">
+        <p>The recommended choice for E-commerce hosting is VPS server or higher level a Dedicated server.</p>
+        <p>You can authorize as to buy hosting, domain name, SSL certificate, privacy on your behalf or you can provide such as by buying it yourself.</p>
+    </div>
+    <div class="">
+        <div class="row center">
+        <input class="" type="radio" name="ecommerce" value="Yes">Yes, buy the hosting. |
+        <input class="" type="radio" name="ecommerce" value="No">No, I will provide my own.
+        </div>
+        <div class="row">
+                <select class="rowP-input rowP-border" id="secondGroupHosting" name="recommend" disabled>
+                    <option>Select hosting plan for your website</option>
+                    <option value="VPServer HostGator">VPServer $1800 @36months/Renew $159 per month @ HostGator</option>
+                    <option value="Dedicated server HostGator">Dedicated server $4650 @36months/Renew $239 per month @ HostGator</option>
+                    <option value="VPServer GoDaddy">VPServer $1470 @36months /Renew @ GoDaddy</option>
+                    <option value="Dedicated server GoDaddy">Dedicated server $4350 @36months /Renew $240 per month @ GoDaddy</option>
+                </select>
+        </div>
+    </div>
+</div>
+
+<div class="hidden" id="thirdHostChoice">
+    <div>
+        <hr class="services hrserver">
+    </div>
+    <p>Third content here.</p>
+    <p>Forum, Educational, News, File sharing, and advocacy webiste content here.</p>
+    <div class="center">
+        <p>The recommended choice for E-commerce hosting is VPS server or higher level a Dedicated server.</p>
+        <p>You can authorize as to buy hosting, domain name, SSL certificate, privacy on your behalf or you can provide such as by buying it yourself.</p>
+    </div>
+    <div class="">
+        <div class="row center">
+        <input class="" type="radio" name="ecommerce" value="Yes">Yes, buy the hosting. |
+        <input class="" type="radio" name="ecommerce" value="No">No, I will provide my own.
+        </div>
+        <div class="row">
+                <select class="rowP-input rowP-border" id="thirdGroupHosting" name="recommend" disabled>
+                    <option>Select hosting.</option>
+                    <option value="VPServer HostGator">VPServer $1800 @36months/Renew $159 per month @ HostGator</option>
+                    <option value="Dedicated server HostGator">Dedicated server $4650 @36months/Renew $239 per month @ HostGator</option>
+                    <option value="VPServer GoDaddy">VPServer $1470 @36months /Renew @ GoDaddy</option>
+                    <option value="Dedicated server GoDaddy">Dedicated server $4350 @36months /Renew $240 per month @ GoDaddy</option>
+                </select>
+        </div>
+    </div>
+</div>
+
+                 
+                <!--<div class="row">
+                      <input class="row-input row-border" name="firstname" type="text" placeholder="First Name">
+                </div>
+                
+                <div class="row">
+                      <input class="row-input row-border" name="lastname" type="text" placeholder="Last Name">
+                </div>
+                
+                <div class="row">
+                      <input class="row-input row-border" name="email" type="text" placeholder="E-mail">
+                </div>
+
+                <div class="row">
+                      <input class="row-input row-border" name="phonenumber" type="text" placeholder="Phone Number">
+                </div>
+
+                <div class="row">
+                        <select class="row-input row-border" id="recommend" name="recommend">
+                          <option>Select Recommendation</option>
+                          <option value="General">General</option>
+                          <option value="Providing Service">Providing Service</option>
+                          <option value="Web Future">Web Future</option>
+                          <option value="Technical Issue">Technical Issue</option>
+                          <option value="Ordering">Ordering</option>
+                          <option value="Billing">Billing</option>
+                        </select>
+                </div>
+                
+                <div>
+                    <div>
+                        <textarea class="row-input row-border" id="message" name="message" placeholder="Write your message.." style="height:180px"></textarea>
+                    </div>
+                </div>-->
+
+                <p class="button-center">
+                    <button id="btnClear" class="button button-blue row" type="reset">Clear</button>
+                    <button id="calculate" class="button button-blue" type="submit">Calculate</button>
+                    <button id="buy" class="button button-blue" type="submit">Buy</button>
+                    <button id="emailTotal" class="button button-blue" type="submit">E-mail Project Info</button>
+                </p>
+                </form>
+                <!--    End website form   -->
+
+                 <hr>
+
+                <h2 class="button-center">To develop complain/compliment form</h2>
+                <!--    Start Complain / Compliment form   -->
+                <!-- To develop the form when have time -->
+                <form action="scripts/complain.php" method="POST"></form>
+                    <!--    End Complain / Compliment form   -->
+                 <!--<hr>-->
+        </main>
+        <!-- Start display result for the price of the services selected -->
+        <aside>
+            <h3 class="center question">Your website project estimate.</h3>
+            <div>
+                <p id="showWebSelection"></p>
+                <span id="showWebHost"></span>
+                <p class="result" id="showWebHostPrice"></p>
+            </div>
+            <div id="createElement">
+
+            </div>
+        </aside>
+        <!-- End display result for the price of the services selected -->
+        <footer>
+			<p>New Web Design&copy;
+			<script>document.write(new Date().getFullYear());</script>
+			| All Rights Reserved
+            | Design by <a href="http://www.sofiawebdev.com">&nbsp;&Sopf;&nbsp;&Aopf;&nbsp;&Mopf;&nbsp;</a></p>
+        </footer>
+        <script src="scripts/pricing.js"></script>
+</body>
+
+</html>

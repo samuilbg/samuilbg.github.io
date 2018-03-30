@@ -1,0 +1,406 @@
+/*{outline: solid red;}*/
+*{box-sizing: border-box;}
+body
+{
+	font-family: 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
+	line-height: 1.5em;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Mobile
+_______________________________*/
+.container
+{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;/* 	Relative to 1% of the height of the viewport* */
+}
+
+header
+{
+  grid-column: span 3;
+  padding: 80px;
+  text-align: center;
+  font-size: 1.4em;
+  background: linear-gradient(#336699, #8cb2d9);
+  color: #FFF;
+}
+
+#logo a{
+color: #fff;
+font-family: "Comic Sans MS";
+font-size: 36px;
+font-weight: bolder;
+letter-spacing: 8px;
+}
+
+main
+{
+  flex: 1;
+  padding: 20px;
+}
+
+nav
+{
+  background: linear-gradient(to right, #9ebedf, #cadced);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+nav ul
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+li a
+{
+  display: flex;
+  padding: 10px;
+  color: #FFF;
+}
+
+li a:hover
+{
+  background-color: #80a8c0;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+aside
+{
+  padding: 20px;
+  background: linear-gradient(to left, #9ebedf, #cadced);
+}
+  
+footer
+{
+  grid-column: span 3;
+  /*grid-row: 6;*/
+  padding: 0.3vh;
+  border: 0.5em;
+  text-align: center;
+  font-size: 1em;
+  background: linear-gradient(#8cb2d9, #336699);
+  color: white;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.h1style{
+  letter-spacing: 5px;
+  padding: 15px 0px 15px 0px;
+  word-spacing: 10px;
+  color: royalblue;
+  text-shadow: 3px 3px 18px royalblue;
+  font-weight: bold;
+  font-size: 3vmin;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Larger Screen Display
+_______________________________________*/
+@media only screen and (min-width: 768px)
+{
+  .container
+  {
+    display: grid;/*CSS Grid Layout enables two-dimensional layout without requiring the additional markup for row wrappers.
+    As a two dimensional layout method you can cause elements in your design to span rows, in a predictable and robust way.*/
+    grid-template-columns: 150px 1fr 0.3fr;
+    grid-template-rows: auto 1fr auto;
+  }
+  /*  Home page main content - first row  */
+  .main{
+    grid-column: span 2;/* if add column messing the layot*/
+    /*grid-row: row 3;*/
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    display: grid;
+    /*justify-content: space-between;*/
+  }
+  
+  .mainarticle{
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .mainarticle p{
+    line-height: 180%;
+  }
+  /*  Three equal section on the second row */
+  .wrapper3{
+		grid-column: span 2;
+		grid-row: row 1;
+		display: grid;
+    grid-gap: 10px;
+		grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .wrapper3 p{
+    line-height: 180%;
+  }
+
+	.section1 {
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	.section2 {
+		grid-column: 2;
+		grid-row: 2;
+	}
+
+	.section3 {
+		grid-column: 3;
+		grid-row: 2;
+	}
+  /*  End Three equal section on the second row */
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Content layout pattern 1 - 2 - 2 - 1 with 4 rows (services page)
+____________________________________________________________________________*/
+.wrapper2{
+  grid-column: span 2;
+  grid-row: row 2;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.wrapper2 p{
+  line-height: 180%;
+}
+
+.section1a {
+  grid-column: 1;
+  grid-row: 3;
+}
+.section2a{
+  grid-column: 2;
+  grid-row: 3;
+}
+.bottom{
+  grid-column: 1 / 3;
+  grid-row: 4;
+}
+/*  End pattern 1 - 2 - 2 - 1 */
+
+  nav ul
+  {
+    display: grid;
+    justify-content: space-between;
+  }
+
+  li a
+  {
+    display: block;
+    padding: 10px;
+    color: #FFF;
+  }
+
+  nav li
+  {
+    text-align: center;
+  }
+
+  li a:hover
+  {
+    background-color: #80a8c0;
+  }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Logo & site name
+______________________________________*/
+#logo {
+	width: 100%;
+	padding: 20px 0 5px 0;
+	text-align: center;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Class selectors for center elements, bigger font, colors etc.
+__________________________________________________________________*/
+.center{
+  text-align: center;
+}
+
+.mainh{
+  font-size: x-large;
+  letter-spacing: 1px;
+}
+ 
+.cd li{
+  list-style: square;
+  margin-left: 2vmax;
+}
+.question{
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-top: 2vmin;
+  margin-bottom: 1vmin;
+}
+.linkstyle{
+  color: rgb(65, 162, 220);
+  font-weight: bold;
+}
+
+.left{
+  float: left;
+  margin: 0px 15px 15px;
+}
+
+.right{
+  float: right;
+  margin: 0px 15px 15px;
+}
+
+.wrapper3 h2, .wrapper2 h2, h2{
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 15px 0px 15px 0px;
+  word-spacing: 10px;
+  color: royalblue;
+  text-shadow: 3px 3px 18px royalblue;
+  font-weight: bold;
+  font-size: 2vmin;
+}
+
+#faq h2{
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 15px 0px 15px 0px;
+  word-spacing: 10px;
+  color: royalblue;
+  text-shadow: 5px 5px 9px royalblue;
+  font-weight: bold;
+  font-size: 1.5vmin;
+}
+
+/*.mainarticle p{
+  padding: 25px 0px 25px 0px;
+}*/
+.services{
+  margin-top: 10px;
+}
+.smalltxt{
+  font-size: 0.9vmax;
+  font-weight: bolder;
+}
+.result{
+  font-weight: bolder;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Feedback page
+________________________________*/
+
+/* Style inputs, select elements and textareas */
+#fdbkform{
+  background-color: whitesmoke;
+}
+
+.row{
+  margin-top:16px;
+  margin-bottom:16px;
+}
+/*  Styling the text fields */
+.row-input{
+  padding:12px;
+  display:block;
+  border:none;
+  border-bottom:1px solid #ccc;
+  border-radius: 5px;
+  width:40%;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 2px;
+}
+.row-border{
+  border:1px solid #ccc;
+}
+
+/*  Style button  */
+.button{/*.w3-button{*/
+  border:none;
+  display:inline-block;
+  padding:10px 18px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 2px;
+}
+
+.button:hover{
+  color:#000!important;
+  background-color:#ccc!important;
+}
+
+.button-blue{
+  color:#fff;
+  background-color:#2196F3;
+}
+
+.button-center{
+  text-align:center;
+}
+/*  End button styling  */
+
+/*  Thank you page  */
+#thanku
+{
+  grid-column: span 3;
+  padding: 0.3vh;
+  border: 0.5em;
+  text-align: center;
+  font-size: 1em;
+  background-color: whitesmoke;
+}
+/*  End Thank you poage */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Pricing page
+________________________________*/
+#firstHostChoice, #secondHostChoice, #thirdHostChoice{
+  display: none;
+}
+/*  Styling the text fields */
+.rowP-input{
+  padding:12px;
+  display:block;
+  border:none;
+  border-bottom:1px solid #ccc;
+  border-radius: 5px;
+  width:53%;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 2px;
+}
+
+.rowP-border{
+  border:1px solid #ccc;
+}
+
+.hrserver { 
+  padding: 0;
+  border: none; 
+  border-top: medium double #8c8c8c; 
+  color: #8c8c8c; 
+  text-align: center; 
+} 
+.hrserver:after { 
+  content: "Select Hosting Service"; 
+  color: goldenrod;
+  display: inline-block; 
+  position: relative; 
+  top: -0.7em; 
+  font-size: 1.25em; 
+  padding: 0 0.25em; 
+  background: #fff; 
+}
